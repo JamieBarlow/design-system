@@ -1,0 +1,154 @@
+html {
+    font-size: 16px;
+    /* text-align: center; */
+}
+
+.container {
+    border: 1px solid black;
+    background-color: #12484e;
+    padding: 10px;
+    margin: 20px;
+    display: block;
+    width: 90% auto;
+    overflow: auto;
+    text-align: center;
+    box-shadow: 10px 5px 5px gray;
+}
+
+#main-header {
+    padding: 10px;
+    margin: 20px;
+}
+
+.underline {
+    padding: 10px;
+    border-bottom: 1px dotted gray;
+}
+
+.left {
+    text-align: start;
+}
+
+.white {
+    color: white;
+}
+
+.color-panel {
+    display: block;
+    float: left;
+    width: 15%;
+    margin: 10px;
+}
+
+.royal-blue {
+    background-color: #0C1446;
+    color: white;
+}
+
+.seafoam-green {
+    background-color: #87ACA3;
+    color: black;
+}
+
+.teal {
+    background-color: #2B7C85;
+    color: white;
+}
+
+.teal-green {
+    background-color: #175873;
+    color: white;
+}
+
+.blue-gray {
+    background-color: #5885AF;
+    color: white;
+}
+
+.baby-blue {
+    background-color: #C3E0E5;
+    color: black;
+}
+
+.font-panel {
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 10px;
+}
+
+.font-label {
+    text-decoration: underline;
+}
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+.manrope {
+    font-family: 'Manrope', sans-serif;
+}
+.source-code-pro {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.regular {
+    font-style: normal;
+}
+.bold {
+    font-weight: 700;
+}
+.italic {
+    font-style: italic;
+}
+
+.text-column {
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 10px;
+}
+
+.text-column.inter, .text-column.manrope {
+    border-right: 1px solid gray;
+}
+
+.text-column div {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.text-panel-h1 {
+    min-height: 200px;
+    height: auto;
+    width: auto;
+    border-bottom: 1px solid gray;
+}
+.text-panel-h2 {
+    min-height: 150px;
+    height: auto;
+    width: auto;
+    border-bottom: 1px solid gray;
+}
+.text-panel-p {
+    min-height: 150px;
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
