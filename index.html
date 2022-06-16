@@ -51,19 +51,19 @@
         <div class="container">
             <h2 class="source-code-pro underline left white">Fonts</h2>
             <div class="container-panel">
-                <div class="font-panel blue-gray">
+                <div class="tri-panel blue-gray">
                     <p class="font-label inter">Inter</p>
                     <p class="regular inter">The quick brown fox jumps over the lazy dog.</p>
                     <p class="bold inter">The quick brown fox jumps over the lazy dog.</p>
                     <p class="italic inter">The quick brown fox jumps over the lazy dog.</p>
                 </div>
-                <div class="font-panel seafoam-green">
+                <div class="tri-panel seafoam-green">
                     <p class="font-label manrope">Manrope</p>
                     <p class="regular manrope">The quick brown fox jumps over the lazy dog.</p>
                     <p class="bold manrope">The quick brown fox jumps over the lazy dog.</p>
                     <p class="italic manrope">The quick brown fox jumps over the lazy dog.</p>
                 </div>
-                <div class="font-panel royal-blue">
+                <div class="tri-panel royal-blue">
                     <p class="font-label source-code-pro">Source Code Pro</p>
                     <p class="regular source-code-pro">The quick brown fox jumps over the lazy dog.</p>
                     <p class="bold source-code-pro">The quick brown fox jumps over the lazy dog.</p>
@@ -74,7 +74,7 @@
         <div class="container">
             <h2 class="source-code-pro underline left white">Text Styles</h2>
             <div class="container-panel white">
-                <div class="text-column inter">
+                <div class="column column-1 inter">
                     <div class="text-panel-h1">
                         <h1>H1: Main Header</h1>
                         <ul>
@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="text-column manrope">
+                <div class="column column-2 manrope">
                     <div class="text-panel-h1">
                         <h1>H1: Main Header</h1>
                         <ul>
@@ -126,7 +126,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="text-column source-code-pro">
+                <div class="column source-code-pro">
                     <div class="text-panel-h1">
                         <h1>H1: Main Header</h1>
                         <ul>
@@ -155,7 +155,62 @@
 
             </div>
         </div>
+        <div class="container">
+            <h2 class="source-code-pro underline left white">Buttons</h2>
+        </div>
+        <div class="container">
+            <h2 class="source-code-pro underline left white">Try them out!</h2>
+            <div class="container-panel white">
+                <div class="column column-1">
+                    <div class="single-panel inter">
+                        <label for="color-select">Background color</label>
+                        <select id="color-select" name="bg-color">
+                            <option value = "0">Royal Blue</option>
+                            <option value = "1">Seafoam Green</option>
+                            <option value = "2">Teal</option>
+                            <option value = "3">Teal Green</option>
+                            <option value = "4">Blue Gray</option>
+                            <option value = "5">Baby Blue</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column column-2">
+                    <div class="tri-panel inter">
+                        <label for="double">Normal font size</label>
+                        <input type="button" value="X1" id="normal" onclick="textSize(1);">
+                    </div>
+                    <div class="tri-panel manrope">
+                        <label for="double">Double font size</label>
+                        <input type="button" value="X2" id="double" onclick="textSize(2);">
+                    </div>
+                    <div class="tri-panel source-code-pro">
+                        <label for="double">Triple font size</label>
+                        <input type="button" value="X3" id="triple" onclick="textSize(3);">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="tri-panel inter">
+                        <label for="double">Normal font size</label>
+                        <input type="button" value="X1" id="normal" onclick="textSize(1);">
+                    </div>
+                    <div class="tri-panel manrope">
+                        <label for="double">Double font size</label>
+                        <input type="button" value="X2" id="double" onclick="textSize(2);">
+                    </div>
+                    <div class="tri-panel source-code-pro">
+                        <label for="double">Triple font size</label>
+                        <input type="button" value="X3" id="triple" onclick="textSize(3);">
+                    </div>
+                </div>
+                <div class="tri-panel blue-gray" id="tryout">
+                    <p class="regular inter">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold inter">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic inter">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -70,10 +70,17 @@ html {
     color: black;
 }
 
-.font-panel {
+.tri-panel {
     display: block;
     float: left;
     width: 30%;
+    margin: 10px;
+}
+
+.single-panel {
+    display: block;
+    float: left;
+    width: 100%;
     margin: 10px;
 }
 
@@ -101,18 +108,18 @@ html {
     font-style: italic;
 }
 
-.text-column {
+.column {
     display: block;
     float: left;
     width: 30%;
     margin: 10px;
 }
 
-.text-column.inter, .text-column.manrope {
+.column.column-1, .column.column-2 {
     border-right: 1px solid gray;
 }
 
-.text-column div {
+.column div {
     margin: 0 auto;
     padding: 0 auto;
 }
