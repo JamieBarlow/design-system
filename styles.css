@@ -18,7 +18,7 @@ html {
 #main-header {
     padding: 10px;
     margin: 20px;
-    text-align: center;
+    text-align: start;
 }
 
 .underline {
@@ -83,6 +83,16 @@ html {
     float: left;
     width: 100%;
     margin: 10px;
+}
+
+.test-panel {
+    position: relative;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    clear: left;
+    margin: 10px;
+    border: 10px;
 }
 
 .font-label {

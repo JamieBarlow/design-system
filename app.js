@@ -1,6 +1,8 @@
+// Variables to select example text box for styling
 let testStyles = document.getElementById("tryout");
 const pgraphs = testStyles.getElementsByTagName("p");
 
+// Change text size
 function textSize(size) {
     for (let i = 0; i < pgraphs.length; i++) {
         let remSize = `${size}rem`;
@@ -8,6 +10,7 @@ function textSize(size) {
     }
  }
 
+ // Change bg color
  document.getElementById("color-select").onchange = function() {
     let color = document.getElementById("color-select").value;
     switch (color) {
