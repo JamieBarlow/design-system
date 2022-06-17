@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@400;500;700&family=Source+Code+Pro:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     </header>
     <main>
         <div class="container">
-            <h2 class="source-code-pro underline left white">Colors</h2>
+            <h2 class="source-code-pro underline left text-white">Colors</h2>
             <div class="container-panel">
                 <div class="color-panel royal-blue">
                     <p class="color-label">Royal Blue</p>
@@ -49,7 +50,7 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="source-code-pro underline left white">Fonts</h2>
+            <h2 class="source-code-pro underline left text-white">Fonts</h2>
             <div class="container-panel">
                 <div class="tri-panel blue-gray">
                     <p class="font-label inter">Inter</p>
@@ -72,8 +73,8 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="source-code-pro underline left white">Text Styles</h2>
-            <div class="container-panel white">
+            <h2 class="source-code-pro underline left text-white">Text Styles</h2>
+            <div class="container-panel text-white">
                 <div class="column column-1 inter">
                     <div class="text-panel-h1">
                         <h1>H1: Main Header</h1>
@@ -156,11 +157,20 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="source-code-pro underline left white">Buttons</h2>
+            <h2 class="source-code-pro underline left text-white">Buttons and form elements</h2>
+            <div class="container-panel text-white">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+                <a class="btn btn-primary" href="#" role="button">Link</a>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
         </div>
         <div class="container">
-            <h2 class="source-code-pro underline left white">Try them out!</h2>
-            <div class="container-panel white">
+            <h2 class="source-code-pro underline left text-white">Try them out!</h2>
+            <div class="container-panel text-white">
                 <div class="column column-1">
                     <div class="single-panel inter">
                         <label for="color-select">Background color</label>
@@ -210,6 +220,7 @@
             </div>
         </div>
     </main>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
     <script src="app.js"></script>
 </body>
 
