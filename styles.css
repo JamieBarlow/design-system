@@ -3,7 +3,7 @@ html {
     /* text-align: center; */
 }
 
-.container {
+.container-j {
     border: 1px solid black;
     background-color: #12484e;
     padding: 10px;
@@ -14,6 +14,7 @@ html {
     text-align: center;
     box-shadow: 10px 5px 5px gray;
 }
+
 
 #main-header {
     padding: 10px;
@@ -41,41 +42,41 @@ html {
     margin: 10px;
 }
 
-.royal-blue {
+.color-1 {
     background-color: #0C1446;
     color: white;
 }
 
-.seafoam-green {
+.color-2 {
     background-color: #87ACA3;
     color: black;
 }
 
-.teal {
+.color-3 {
     background-color: #2B7C85;
     color: white;
 }
 
-.teal-green {
+.color-4 {
     background-color: #175873;
     color: white;
 }
 
-.blue-gray {
+.color-5 {
     background-color: #5885AF;
     color: white;
 }
 
-.baby-blue {
+.color-6 {
     background-color: #C3E0E5;
     color: black;
 }
 
 .tri-panel {
-    display: block;
     float: left;
-    width: 30%;
+    /* width: 30%; */
     margin: 10px;
+    padding: 10px;
 }
 
 .single-panel {
@@ -87,6 +88,7 @@ html {
 
 .test-panel {
     position: relative;
+    display: block;
     left: 25%;
     right: 25%;
     width: 50%;
@@ -119,10 +121,20 @@ html {
     font-style: italic;
 }
 
+.container-j-panel {
+    display: flex;
+    align-content: center;
+}
+
+button, a.btn, input.btn {
+    margin: 10px;
+}
+
 .column {
-    display: block;
+    align-self: center;
     float: left;
-    width: 30%;
+    width: 100%;
+    height: 100%;
     margin: 10px;
 }
 
@@ -169,4 +181,13 @@ h3 {
 
 p {
     font-size: 1rem;
+}
+
+#font-size {
+    float: left;
+    padding: 10px;
+}
+
+label {
+    margin-right: 5px;
 }

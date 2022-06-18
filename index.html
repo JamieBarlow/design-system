@@ -20,51 +20,51 @@
         <h1 class="source-code-pro" id="main-header">My Website Style Guide</h1>
     </header>
     <main>
-        <div class="container">
+        <div class="container-j">
             <h2 class="source-code-pro underline left text-white">Colors</h2>
-            <div class="container-panel">
-                <div class="color-panel royal-blue">
+            <div class="container-j-panel">
+                <div class="color-panel color-1">
                     <p class="color-label">Royal Blue</p>
                     <p class="color-hex">#0C1446</p>
                 </div>
-                <div class="color-panel seafoam-green">
+                <div class="color-panel color-2">
                     <p class="color-label">Seafoam Green</p>
                     <p class="color-hex">#87ACA3</p>
                 </div>
-                <div class="color-panel teal">
+                <div class="color-panel color-3">
                     <p class="color-label">Teal</p>
                     <p class="color-hex">#2B7C85</p>
                 </div>
-                <div class="color-panel teal-green">
+                <div class="color-panel color-4">
                     <p class="color-label">Teal Green</p>
                     <p class="color-hex">#175873</p>
                 </div>
-                <div class="color-panel blue-gray">
+                <div class="color-panel color-5">
                     <p class="color-label">Blue Gray</p>
                     <p class="color-hex">#5885AF</p>
                 </div>
-                <div class="color-panel baby-blue">
+                <div class="color-panel color-6">
                     <p class="color-label">Baby Blue</p>
                     <p class="color-hex">#C3E0E5</p>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-j">
             <h2 class="source-code-pro underline left text-white">Fonts</h2>
-            <div class="container-panel">
-                <div class="tri-panel blue-gray">
+            <div class="container-j-panel">
+                <div class="tri-panel color-5">
                     <p class="font-label inter">Inter</p>
                     <p class="regular inter">The quick brown fox jumps over the lazy dog.</p>
                     <p class="bold inter">The quick brown fox jumps over the lazy dog.</p>
                     <p class="italic inter">The quick brown fox jumps over the lazy dog.</p>
                 </div>
-                <div class="tri-panel seafoam-green">
+                <div class="tri-panel color-2">
                     <p class="font-label manrope">Manrope</p>
                     <p class="regular manrope">The quick brown fox jumps over the lazy dog.</p>
                     <p class="bold manrope">The quick brown fox jumps over the lazy dog.</p>
                     <p class="italic manrope">The quick brown fox jumps over the lazy dog.</p>
                 </div>
-                <div class="tri-panel royal-blue">
+                <div class="tri-panel color-1">
                     <p class="font-label source-code-pro">Source Code Pro</p>
                     <p class="regular source-code-pro">The quick brown fox jumps over the lazy dog.</p>
                     <p class="bold source-code-pro">The quick brown fox jumps over the lazy dog.</p>
@@ -72,9 +72,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-j">
             <h2 class="source-code-pro underline left text-white">Text Styles</h2>
-            <div class="container-panel text-white">
+            <div class="container-j-panel text-white">
                 <div class="column column-1 inter">
                     <div class="text-panel-h1">
                         <h1>H1: Main Header</h1>
@@ -156,9 +156,9 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container-j">
             <h2 class="source-code-pro underline left text-white">Buttons and form elements</h2>
-            <div class="container-panel text-white">
+            <div class="container-j-panel text-white">
                 <button type="button" class="btn btn-primary">Primary</button>
                 <button type="button" class="btn btn-light">Light</button>
                 <button type="button" class="btn btn-dark">Dark</button>
@@ -168,12 +168,12 @@
                 <input class="btn btn-primary" type="submit" value="Submit">
             </div>
         </div>
-        <div class="container">
+        <div class="container-j">
             <h2 class="source-code-pro underline left text-white">Try them out!</h2>
-            <div class="container-panel text-white">
+            <div class="container-j-panel text-white">
                 <div class="column column-1">
                     <div class="single-panel inter">
-                        <label for="color-select">Background color</label>
+                        <label for="color-select" class="bold">Background color:</label>
                         <select id="color-select" name="bg-color">
                             <option value = "0">Royal Blue</option>
                             <option value = "1">Seafoam Green</option>
@@ -185,38 +185,38 @@
                     </div>
                 </div>
                 <div class="column column-2">
-                    <div class="tri-panel inter">
-                        <label for="double">Normal font size</label>
-                        <input type="button" value="X1" id="normal" onclick="textSize(1);">
-                    </div>
-                    <div class="tri-panel manrope">
-                        <label for="double">Double font size</label>
-                        <input type="button" value="X2" id="double" onclick="textSize(2);">
-                    </div>
-                    <div class="tri-panel source-code-pro">
-                        <label for="double">Triple font size</label>
-                        <input type="button" value="X3" id="triple" onclick="textSize(3);">
+                    <div class="single-panel inter">
+                        <label for="font-select" class="bold">Font:</label>
+                        <select id="font-select" name="font">
+                            <option value = "0">Inter</option>
+                            <option value = "1">Manrope</option>
+                            <option value = "2">Source Code Pro</option>
+                        </select>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="tri-panel inter">
-                        <label for="X1">Normal font size</label>
+                <div class="column inter">
+                    <p id="font-size" class="bold">Font Size:</p>
+                    <div class="tri-panel">
+                        <label for="X1">Normal</label>
+                        <br>
                         <button id="X1" type="button" class="btn btn-outline-light" onclick="textSize(1);">X1</button>
                     </div>
-                    <div class="tri-panel manrope">
-                        <label for="X2">Double font size</label>
+                    <div class="tri-panel">
+                        <label for="X2">Double</label>
+                        <br>
                         <button id="X2" type="button" class="btn btn-outline-light" onclick="textSize(2);">X2</button>
                     </div>
-                    <div class="tri-panel source-code-pro">
-                        <label for="X3">Triple font size</label>
+                    <div class="tri-panel">
+                        <label for="X3">Triple</label>
+                        <br>
                         <button id="X3" type="button" class="btn btn-outline-light" onclick="textSize(3);">X3</button>
                     </div>
                 </div>
-                <div class="test-panel blue-gray" id="tryout">
-                    <p class="regular inter">The quick brown fox jumps over the lazy dog.</p>
-                    <p class="bold inter">The quick brown fox jumps over the lazy dog.</p>
-                    <p class="italic inter">The quick brown fox jumps over the lazy dog.</p>
-                </div>
+            </div>
+            <div class="test-panel color-1" id="tryout">
+                <p class="regular">The quick brown fox jumps over the lazy dog.</p>
+                <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                <p class="italic">The quick brown fox jumps over the lazy dog.</p>
             </div>
         </div>
     </main>

@@ -2,15 +2,7 @@
 let testStyles = document.getElementById("tryout");
 const pgraphs = testStyles.getElementsByTagName("p");
 
-// Change text size
-function textSize(size) {
-    for (let i = 0; i < pgraphs.length; i++) {
-        let remSize = `${size}rem`;
-        pgraphs[i].style.fontSize = remSize;
-    }
- }
-
- // Change bg color
+ // Select bg color
  document.getElementById("color-select").onchange = function() {
     let color = document.getElementById("color-select").value;
     switch (color) {
@@ -34,3 +26,37 @@ function textSize(size) {
             break;
     }
  }
+
+// Select font
+document.getElementById("font-select").onchange = function() {
+    let font = document.getElementById("font-select").value;
+    switch (font) {
+        case "0":
+            testStyles.style.fontFamily = "Inter,sans-serif";
+            break;
+        case "1":
+            testStyles.style.fontFamily = "Manrope,sans-serif";
+            break;
+        case "2":
+            testStyles.style.fontFamily = "Source Code Pro,monospace";
+            break;
+    }
+ }
+
+// Change text size
+function textSize(size) {
+    for (let i = 0; i < pgraphs.length; i++) {
+        let remSize = `${size}rem`;
+        pgraphs[i].style.fontSize = remSize;
+    }
+ }
+
+ // Change CSS color depending on color you have written into each color-panel
+function changeColor() {
+let colorHexes = document.getElementsByClassName("color-hex");
+let colorPanels = document.getElementsByClassName("color-panel");
+for (let i = 0; i < colorHexes.length; i++) {
+    colorPanels[i].style.backgroundColor = colorHexes[i].innerHTML;
+    }
+}
+changeColor();
