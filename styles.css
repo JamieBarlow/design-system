@@ -191,3 +191,11 @@ p {
 label {
     margin-right: 5px;
 }
+
+input {
+    margin-bottom: 20px;
+}
+
+#reset {
+    float: left;
+}
