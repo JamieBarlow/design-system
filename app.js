@@ -1,4 +1,44 @@
-// Variables to select example text box for styling
+//Variables for color panels
+let colorHexes = document.getElementsByClassName("color-hex");
+let colorPanels = document.getElementsByClassName("color-panel");
+let defaults = [];
+
+// Change color automatically if HTML hex value changes
+function changeColor() {
+    for (let i = 0; i < colorHexes.length; i++) {
+        colorPanels[i].style.backgroundColor = colorHexes[i].value;
+        }
+    }
+changeColor();
+
+// Build default colors from HTML hex values (needed for reset)
+const colorDefaults = () => {
+    for (let i = 0; i < colorHexes.length; i++) {
+        defaults.push(colorHexes[i].value);
+    }
+    return defaults;
+}
+colorDefaults();
+
+// Change color on pressing 'Enter'
+for (let i = 0; i < colorPanels.length; i++) {
+colorPanels[i].addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+    let color = colorHexes[i].value;
+    colorPanels[i].style.backgroundColor = color;
+    }
+    });
+}
+
+// Reset color stylings
+function reset() {
+    for (let i = 0; i < defaults.length; i++) {
+        colorHexes[i].value = defaults[i];
+        colorPanels[i].style.backgroundColor = defaults[i];
+        }
+}
+
+// Variables to select 'Try them out!' text box for styling
 let testStyles = document.getElementById("tryout");
 const pgraphs = testStyles.getElementsByTagName("p");
 
@@ -51,12 +91,4 @@ function textSize(size) {
     }
  }
 
- // Change CSS color depending on color you have written into each color-panel
-function changeColor() {
-let colorHexes = document.getElementsByClassName("color-hex");
-let colorPanels = document.getElementsByClassName("color-panel");
-for (let i = 0; i < colorHexes.length; i++) {
-    colorPanels[i].style.backgroundColor = colorHexes[i].innerHTML;
-    }
-}
-changeColor();
+
