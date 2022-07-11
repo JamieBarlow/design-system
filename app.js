@@ -26,8 +26,20 @@ colorPanels[i].addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
     let color = colorHexes[i].value;
     colorPanels[i].style.backgroundColor = color;
+    changeTextColor();
     }
     });
+}
+
+// Change text color if background is too dark:
+function changeTextColor() {
+    for (let i = 0; i < colorHexes.length; i++) {
+        if (colorHexes[i].value[1] < "7" || colorHexes[i].value[3] < "7" || colorHexes[i].value[5] < "7") {
+            colorPanels[i].style.color = "white";
+        } else {
+            colorPanels[i].style.color = "black";
+        }
+    }
 }
 
 // Reset color stylings
@@ -36,6 +48,7 @@ function reset() {
         colorHexes[i].value = defaults[i];
         colorPanels[i].style.backgroundColor = defaults[i];
         }
+    changeTextColor();
 }
 
 // Variables to select 'Try them out!' text box for styling
